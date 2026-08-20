@@ -28,7 +28,7 @@ overlap **dynamically during training**, conditioned on which domain each traini
 
 GRAIL has two components.
 
-### 1. Parameter-wise localization (OP-UR / OP-RR)
+### 1. Parameter-wise localization
 
 For each LoRA weight tensor, GRAIL accumulates the gradient over the forget set and the retain set of
 each domain (`llm_localization/localization.py`). Each tensor is then flattened and every element is
