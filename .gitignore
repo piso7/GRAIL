@@ -1,0 +1,35 @@
+# === Model weights, checkpoints, and precomputed artifacts (never commit) ===
+*.pt
+*.pth
+*.bin
+*.safetensors
+checkpoint-*/
+grail_output*/
+grail_baseline*/
+output/
+outputs/
+tokenized_dataset/
+llm_localization/grail_outputs/
+pretrain/paper_models/
+
+# Datasets / HF cache
+data/
+**/data/downloads/
+
+# Local models
+models/
+
+# Experiment logs
+wandb/
+*.log
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
